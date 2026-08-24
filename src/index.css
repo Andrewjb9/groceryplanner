@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+
+@layer base {
+  html {
+    /* Kill rubber-band scroll and pull-to-refresh on iOS. */
+    overscroll-behavior: none;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    overscroll-behavior: none;
+    /* Long-press on a tap target otherwise pops the selection callout. */
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Anything below 16px makes iOS zoom the page on focus. Never do it. */
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  button {
+    touch-action: manipulation;
+  }
+}
