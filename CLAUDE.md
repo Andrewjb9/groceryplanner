@@ -8,7 +8,7 @@ Personal weekly grocery budget and meal planner. React PWA, installed to an iPho
 
 ## Current phase
 
-**Phase 0 — Scaffold and deploy.**
+**Phase 2 — Recipes tab.**
 
 Work on one phase at a time. Do not start the next phase until the current phase's "Done when" criteria in `plan.md` pass. When a phase is finished, update the line above and commit.
 

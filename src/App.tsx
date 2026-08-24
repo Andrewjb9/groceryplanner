@@ -5,6 +5,7 @@ import Recipes from './routes/Recipes'
 import History from './routes/History'
 import Items from './routes/Items'
 import Shop from './routes/Shop'
+import Settings from './routes/Settings'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/items" element={<Items />} />
       </Route>
       <Route path="/shop" element={<Shop />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   )
 }
